@@ -1,0 +1,96 @@
+body {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f2f5; 
+}
+
+h2 {
+    margin-top: 50px;
+    font-weigbody {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    min-height: 100vh; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+h2 {
+    margin-top: 0; 
+    margin-bottom: 30px;
+    font-weight: 700;
+    color: #2c3e50;
+    letter-spacing: 3px;
+}
+
+img {
+    width: 180px; 
+    margin: 0;
+    display: block;
+    
+    transition: filter 0.5s ease; 
+}
+
+img.nyala {
+    filter: drop-shadow(0 0 20px rgba(255, 204, 0, 0.8));
+}
+
+.tombol-grup {
+    margin-top: 30px;
+}
+
+button {
+    padding: 12px 24px;
+    margin: 5px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    border: none;
+    border-radius: 8px;
+    background-color: #e91e8c; /* Sesuai warna pink di fotomu */
+    color: white;
+    transition: 0.2s;
+}
+
+button:hover {
+    background-color: #c2185b;
+    transform: translateY(-2px);
+}
+
+.status {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #7f8c8d;
+}ht: 700; 
+    color: #2c3e50;   
+    letter-spacing: 3px; 
+}
+
+img {
+    width: 150px;
+    margin: 20px auto;  
+    display: block;    
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 600; 
+    border: none; 
+    border-radius: 8px; 
+    background-color: #ff91cd; 
+    color: white; 
+    transition: 0.2s; 
+}
+
+
+button:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px); 
+}
