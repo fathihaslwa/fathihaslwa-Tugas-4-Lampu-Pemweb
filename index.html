@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Saklar Lampu</title>
+</head>
+
+<body>
+    <h2>SAKLAR LAMPU</h2>
+
+    <!-- Gambar lampu -->
+    <img id="lampu" src="lampumati.jpeg" alt="Lampu Mati">
+    
+    <!-- Tombol untuk menyalakan dan mematikan lampu -->
+     <div class="tombol-grub">
+        <button onclick="nyala()">Nyalakan Lampu</button>
+        <button onclick="mati()">Matikan Lampu</button>
+    </div>
+    <!-- Teks Status -->
+        <p id="statusText">Status: Lampu Mati</p>
+
+    <script>
+        function nyala() {
+        let konfirmasi = confirm("Yakin ingin menyalakan lampu?");
+        if (konfirmasi) {
+            document.getElementById("lampu").src = "lampunyala.jpeg";
+            document.getElementById("lampu").alt = "Lampu Nyala";
+            document.getElementById("lampu").classList.add("nyala"); // Nambahin efek glow
+            document.getElementById("statusText").innerText = "Status: Lampu Menyala ✨";
+        }
+    }
+
+        function mati() {
+            let konfirmasi = confirm("Yakin ingin mematikan lampu?");
+            if (konfirmasi) {
+                document.getElementById("lampu").src = "lampumati.jpeg";
+                document.getElementById("lampu").alt = "Lampu Mati";
+                document.getElementById("lampu").classList.remove("nyala"); // Hilangkan efek glow
+                document.getElementById("statusText").innerText = "Status: Lampu Mati";
+            }
+    }
+    </script>
+    
+</body>
+</html>
